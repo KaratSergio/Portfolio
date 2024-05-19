@@ -11,15 +11,12 @@ interface NavItemProps {
 
 const NavItem = ({ active, setActive, name, route }: NavItemProps) => {
   return active !== name ? (
-    <Link href={route}>
-      <a>
-        <span
-          className="mx-2 cursor-pointer hover:border-b-4 hover:text-green"
-          onClick={() => setActive(name)}
-        >
-          {name}
-        </span>
-      </a>
+    <Link
+      href={route}
+      className="mx-2 cursor-pointer hover:border-b-4 hover:text-green"
+      onClick={() => setActive(name)}
+    >
+      {name}
     </Link>
   ) : null;
 };
