@@ -1,11 +1,42 @@
+import { useState } from "react";
+import { Category } from "../../types";
+import { projects as projectsData } from "../data/data";
+
+import ProjectCard from "../components/ProjectCard";
+import ProjectsNavbar from "../components/ProjectsNavbar";
+
 const Projects = () => {
+  const [projects, setProjects] = useState(projectsData);
+  const [active, setActive] = useState<Category | "All">("All");
+
+  const handlerFilterCategory = (category: Category | "All") => {
+    if (category === "All") {
+      setProjects(projectsData);
+    } else {
+      const filteredProjects = projectsData.filter((project) =>
+        project.category.includes(category)
+      );
+      setProjects(filteredProjects);
+    }
+    setActive(category);
+  };
+
   return (
-    <section className="flex flex-col items-center justify-between p-24">
-      <div className="z-10 w-full max-w-5xl items-center justify-between font-mono text-sm lg:flex">
-        <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-          Hello i`am Sergio ....
-          <code className="font-mono font-bold">here my projects...</code>
-        </p>
+    <section className="px-5 py-2 overflow-y-scroll" style={{ height: "65vh" }}>
+      <ProjectsNavbar
+        handlerFilterCategory={handlerFilterCategory}
+        active={active}
+      />
+
+      <div className="relative grid grid-cols-12 gap-4 my-3">
+        {projects.map((project) => (
+          <div
+            key={project.name}
+            className="col-span-12 p-2 bg-gray-200 rounded-lg sm:col-span-6 lg:col-span-4 dark:bg-dark-200"
+          >
+            <ProjectCard project={project} />
+          </div>
+        ))}
       </div>
     </section>
   );

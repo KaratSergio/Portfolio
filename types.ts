@@ -1,4 +1,4 @@
-export type Category = "react" | "node" | "java script";
+export type Category = "React" | "Node" | "JavaScript" | "All";
 
 export interface Project {
   name: string;
@@ -9,3 +9,14 @@ export interface Project {
   category: Category[];
   key_techs: string[];
 }
+
+export type NavItemProps = {
+  value: Category;
+  handlerFilterCategory: (category: Category) => void;
+  active: Category | "All";
+};
+
+export type ProjectsNavbarProps = {
+  handlerFilterCategory: (category: Category) => void;
+  active: Category | "All";
+};
