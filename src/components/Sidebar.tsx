@@ -1,4 +1,4 @@
-import { AiFillGithub, AiFillLinkedin } from "react-icons/ai";
+import { AiFillGithub, AiFillLinkedin, AiFillInstagram } from "react-icons/ai";
 import { GoLocation } from "react-icons/go";
 import { GiTie } from "react-icons/gi";
 import { useTheme } from "next-themes";
@@ -42,6 +42,9 @@ const Sidebar = () => {
         <a href="https://www.linkedin.com/in/sergey-safonov9/">
           <AiFillLinkedin className="w-8 h-8 cursor-pointer" />
         </a>
+        <a href="https://www.instagram.com/sergio_safonelli/?next=%2F">
+          <AiFillInstagram className="w-8 h-8 cursor-pointer" />
+        </a>
         <a href="https://github.com/KaratSergio">
           <AiFillGithub className="w-8 h-8 cursor-pointer" />
         </a>
@@ -68,7 +71,7 @@ const Sidebar = () => {
         onClick={changeTheme}
         className="w-8/12 px-5 py-2 my-4 text-white bg-black rounded-full cursor-pointer bg-gradient-to-r from-green to-blue-500 focus:outline-none hover:scale-105"
       >
-        Toggle Theme
+        Change Theme
       </button>
     </>
   );
