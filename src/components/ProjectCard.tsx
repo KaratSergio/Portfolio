@@ -24,15 +24,15 @@ const ProjectCard = ({
 
   return (
     <div>
-      <Image
-        src={image_path}
-        alt={name}
-        className="cursor-pointer"
-        onClick={() => setShowDetail(true)}
-        layout="responsive"
-        height={150}
-        width={300}
-      />
+      <div onClick={() => setShowDetail(true)} className="cursor-pointer">
+        <Image
+          src={image_path}
+          alt={name}
+          layout="responsive"
+          height={150}
+          width={300}
+        />
+      </div>
       <p className="my-2 text-center">{name}</p>
 
       {showDetail && (
