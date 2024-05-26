@@ -1,3 +1,5 @@
+import { useState, useEffect } from "react";
+
 import { AiFillGithub, AiFillLinkedin, AiFillInstagram } from "react-icons/ai";
 import { GoLocation } from "react-icons/go";
 import { GiTie } from "react-icons/gi";
@@ -8,10 +10,17 @@ import Image from "next/image";
 
 const Sidebar = () => {
   const { theme, setTheme } = useTheme();
+  const [mounted, setMounted] = useState(false);
+
+  useEffect(() => {
+    setMounted(true);
+  }, []);
 
   const changeTheme = () => {
     setTheme(theme === "light" ? "dark" : "light");
   };
+
+  if (!mounted) return null;
 
   return (
     <>
