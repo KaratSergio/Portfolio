@@ -14,7 +14,7 @@ const config: Config = {
     },
     boxShadow: {
       "custom-light": " 0 0 3px #AEBBC3",
-      "custom-dark": "3px 3px 3px #0a0c0e , -1px -1px 8px #0f1115",
+      "custom-dark": "1px 1px 3px #0a0c0e , -1px -1px 8px #0f1115",
     },
     extend: {
       colors: {
@@ -32,7 +32,7 @@ const config: Config = {
           200: "#16181d",
           300: "#40535B",
           500: "#0f1115",
-          700: "#eee",
+          700: "#1e1e1e",
         },
       },
     },
@@ -42,7 +42,7 @@ const config: Config = {
       boxShadow: ["dark"],
     },
   },
-  plugins: [],
+  plugins: [require("tailwind-scrollbar")],
 };
 
 export default config;

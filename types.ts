@@ -1,4 +1,4 @@
-export type Category = "React" | "Node" | "JavaScript" | "All";
+export type Category = "React" | "Node" | "JavaScript" | "Nest" | "All";
 
 export interface Project {
   name: string;

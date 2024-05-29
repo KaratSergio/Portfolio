@@ -27,6 +27,11 @@ const ProjectsNavbar = ({
         handlerFilterCategory={handlerFilterCategory}
         active={active}
       />
+      <NavItem
+        value="Nest"
+        handlerFilterCategory={handlerFilterCategory}
+        active={active}
+      />
     </div>
   );
 };

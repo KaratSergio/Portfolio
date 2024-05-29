@@ -27,7 +27,9 @@ const Sidebar = () => {
       <Image
         src="/images/avatar.jpg"
         alt="avatar"
-        className="mx-auto border rounded-full"
+        className={`mx-auto border rounded-full ${
+          theme === "light" ? "border-black " : "border-white shadow-xl"
+        }`}
         height={128}
         width={128}
         layout="intrinsic"

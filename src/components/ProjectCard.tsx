@@ -29,6 +29,7 @@ const ProjectCard = ({
           src={image_path}
           alt={name}
           layout="responsive"
+          objectFit="cover"
           height={150}
           width={300}
         />
