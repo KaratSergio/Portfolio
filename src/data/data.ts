@@ -36,7 +36,17 @@ export const projects: Project[] = [
     github_url: "https://github.com/KaratSergio/AuthMaster_back",
     category: ["Nest"],
     description:
-      "Backend API project for user registration and authorization using JWT, along with role management and access control",
-    key_techs: ["Node", "Nest", "PostgreSQL", "REST API"],
+      "This project leverages modern web development practices to deliver a secure and scalable application. By using JWT for authentication, role access control, and robust data validation, it ensures the security and integrity of user data. The use of PostgreSQL with Sequelize provides efficient database management, while Docker ensures consistent deployment across various environments. Comprehensive API documentation and a well-structured configuration for different environments further enhance the maintainability and usability of the application.",
+    key_techs: [
+      "Node",
+      "Nest",
+      "PostgreSQL",
+      "REST API",
+      "Swagger",
+      "TypeScript",
+      "Multer",
+      "JWT ",
+      "bcryptjs ",
+    ],
   },
 ];
