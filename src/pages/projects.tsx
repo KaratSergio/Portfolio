@@ -31,7 +31,7 @@ const Projects = () => {
         active={active}
       />
 
-      <div className="relative grid grid-cols-12 gap-4 my-3">
+      <div className="grid grid-cols-12 gap-4 my-3">
         {projects.map((project) => (
           <div
             key={project.name}

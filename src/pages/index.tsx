@@ -2,7 +2,10 @@ import { NextPage } from "next";
 
 const About: NextPage = () => {
   return (
-    <div className="flex flex-col flex-grow px-6 pt-1 ">
+    <div
+      className="flex flex-col flex-grow px-6 pt-1"
+      style={{ height: "65vh" }}
+    >
       <h6 className="my-3 text-base font-medium">
         Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim, facilis,
         error voluptatem dignissimos laboriosam soluta fugiat ad molestias,
