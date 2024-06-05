@@ -32,6 +32,11 @@ const ProjectsNavbar = ({
         handlerFilterCategory={handlerFilterCategory}
         active={active}
       />
+      <NavItem
+        value="TeamProject"
+        handlerFilterCategory={handlerFilterCategory}
+        active={active}
+      />
     </div>
   );
 };

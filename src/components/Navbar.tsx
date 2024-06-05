@@ -13,7 +13,7 @@ const NavItem = ({ active, setActive, name, route }: NavItemProps) => {
   return active !== name ? (
     <Link
       href={route}
-      className="mx-2 cursor-pointer hover:border-b-4 hover:text-green"
+      className="mx-2 cursor-pointer hover:border-b-4 hover:text-yellow"
       onClick={() => setActive(name)}
     >
       {name}
