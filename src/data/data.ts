@@ -1,9 +1,13 @@
 import { Project } from "../../types";
 
+const isLocal = process.env.NODE_ENV === "development";
+
+const imageBasePath = isLocal ? "/images/" : "./images/";
+
 export const projects: Project[] = [
   {
     name: "Food_Boutique",
-    image_path: "./images/foodboutique.png",
+    image_path: `${imageBasePath}foodboutique.png`,
     deployed_url: "https://karatsergio.github.io/project-caramel/",
     github_url: "https://github.com/KaratSergio/project-caramel",
     category: ["JavaScript", "TeamProject"],
@@ -12,7 +16,7 @@ export const projects: Project[] = [
   },
   {
     name: "Filmistry",
-    image_path: "./images/filmistry.png",
+    image_path: `${imageBasePath}filmistry.png`,
     deployed_url: "https://karatsergio.github.io/project-art-of-cinema/",
     github_url: "https://github.com/KaratSergio/project-art-of-cinema",
     category: ["React"],
@@ -22,7 +26,7 @@ export const projects: Project[] = [
   },
   {
     name: "ToDoshka_Back",
-    image_path: "./images/todoshka.png",
+    image_path: `${imageBasePath}todoshka.png`,
     deployed_url: "https://todoshka-back-5xf7.onrender.com/",
     github_url: "https://github.com/KaratSergio/ToDoshka_back",
     category: ["Node", "TeamProject"],
@@ -31,7 +35,7 @@ export const projects: Project[] = [
   },
   {
     name: "AuthMaster_back",
-    image_path: "./images/auth-master.png",
+    image_path: `${imageBasePath}auth-master.png`,
     deployed_url: "https://github.com/KaratSergio/AuthMaster_back",
     github_url: "https://github.com/KaratSergio/AuthMaster_back",
     category: ["Nest"],
@@ -51,7 +55,7 @@ export const projects: Project[] = [
   },
   {
     name: "CamperRent",
-    image_path: "./images/campers.png",
+    image_path: `${imageBasePath}campers.png`,
     deployed_url: "https://karatsergio.github.io/CamperRent_UA/",
     github_url: "https://github.com/KaratSergio/CamperRent_UA",
     category: ["React"],

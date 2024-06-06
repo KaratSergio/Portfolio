@@ -1,11 +1,11 @@
-import { Project } from "../../types";
+import { Project } from "../../../types";
 import { AiFillGithub, AiFillProject, AiFillCaretLeft } from "react-icons/ai";
 
 import Image from "next/image";
 import Link from "next/link";
 
 import { GetStaticPaths, GetStaticProps } from "next";
-import { projects } from "../data/data";
+import { projects } from "../../data/data";
 
 export const getStaticPaths: GetStaticPaths = async () => {
   const paths = projects.map((project) => ({
