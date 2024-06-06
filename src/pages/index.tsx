@@ -76,14 +76,14 @@ const About: NextPage = () => {
         <div className="absolute bottom-4 right-4">
           {theme === "dark" ? (
             <Image
-              src="/images/react.svg"
+              src="./images/react.svg"
               alt="React logotype"
               width={100}
               height={100}
             />
           ) : (
             <Image
-              src="/images/node.svg"
+              src="./images/node.svg"
               alt="Node logotype"
               width={100}
               height={100}

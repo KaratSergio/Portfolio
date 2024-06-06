@@ -7,14 +7,14 @@ import Link from "next/link";
 import { GetStaticPaths, GetStaticProps } from "next";
 import { projects } from "../../data/data";
 
-const getStaticPaths: GetStaticPaths = async () => {
+export const getStaticPaths: GetStaticPaths = async () => {
   const paths = projects.map((project) => ({
     params: { id: project.name },
   }));
   return { paths, fallback: false };
 };
 
-const getStaticProps: GetStaticProps = async ({ params }) => {
+export const getStaticProps: GetStaticProps = async ({ params }) => {
   const project = projects.find((p) => p.name === params?.id);
   return { props: { project } };
 };
