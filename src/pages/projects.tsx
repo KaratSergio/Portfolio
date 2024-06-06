@@ -24,7 +24,7 @@ const Projects = () => {
   return (
     <section
       className="px-5 py-2 overflow-y-auto scrollbar-thin scrollbar-thumb-scrollbarThumb scrollbar-track-scrollbarTrack"
-      style={{ height: "65vh" }}
+      style={{ height: "70vh" }}
     >
       <ProjectsNavbar
         handlerFilterCategory={handlerFilterCategory}

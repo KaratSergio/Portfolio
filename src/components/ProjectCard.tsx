@@ -18,8 +18,6 @@ const ProjectCard = ({ project }: ProjectCardProps) => {
       <Image
         src={project.image_path}
         alt={project.name}
-        layout="responsive"
-        objectFit="cover"
         height={50}
         width={300}
       />

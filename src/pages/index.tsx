@@ -1,6 +1,5 @@
 import { useEffect, useState } from "react";
 import { NextPage } from "next";
-import Image from "next/image";
 
 const About: NextPage = () => {
   const [theme, setTheme] = useState<string>("light");
@@ -29,7 +28,7 @@ const About: NextPage = () => {
   return (
     <div
       className="flex flex-col flex-grow px-6 pt-1 relative"
-      style={{ height: "65vh" }}
+      style={{ height: "70vh" }}
     >
       <h6 className="my-3 text-base font-medium">
         <strong>Hi, I&apos;m Sergio</strong>. I develop web applications as a
@@ -44,7 +43,17 @@ const About: NextPage = () => {
       </h6>
       <div
         className="flex-grow p-4 mt-5 bg-gray-400 dark:bg-dark-100 relative overflow-x-auto scrollbar-thin"
-        style={{ marginLeft: "-1.5rem", marginRight: "-1.5rem" }}
+        style={{
+          backgroundSize: "43%",
+          backgroundPosition: "right bottom",
+          backgroundRepeat: "no-repeat",
+          marginLeft: "-1.5rem",
+          marginRight: "-1.5rem",
+          backgroundImage:
+            theme === "dark"
+              ? "url(./images/react.svg)"
+              : "url(./images/node.svg)",
+        }}
       >
         <ul className="grid grid-cols-2 gap-4 my-3 text-xl font-semibold tracking-wide ">
           <li>
@@ -73,23 +82,19 @@ const About: NextPage = () => {
             Tailwind CSS PostgreSQL MongoDB MariaDB
           </li>
         </ul>
-        <div className="absolute bottom-4 right-4">
+        {/* <div className="absolute bottom-4 right-4">
           {theme === "dark" ? (
-            <Image
-              src="./images/react.svg"
-              alt="React logotype"
-              width={100}
-              height={100}
+            <div
+              className="w-36 h-32 bg-cover bg-no-repeat bg-center"
+              style={{ backgroundImage: `url(./images/react.svg)` }}
             />
           ) : (
-            <Image
-              src="./images/node.svg"
-              alt="Node logotype"
-              width={100}
-              height={100}
+            <div
+              className="absolute bottom-0 right-0 w-44 h-28 bg-cover bg-no-repeat bg-center"
+              style={{ backgroundImage: `url(./images/node.svg)` }}
             />
           )}
-        </div>
+        </div> */}
       </div>
     </div>
   );

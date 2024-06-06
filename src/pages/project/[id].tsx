@@ -30,7 +30,7 @@ const ProjectDetail = ({ project }: { project: Project }) => {
   return (
     <div
       className="container bg-slate-200 dark:bg-zinc-950 mx-auto px-4 pb-4 relative overflow-x-auto scrollbar-thin"
-      style={{ height: "65vh" }}
+      style={{ height: "70vh" }}
     >
       <Link href="/projects">
         <span className="absolute flex top-2 right-6 underline">
@@ -38,18 +38,15 @@ const ProjectDetail = ({ project }: { project: Project }) => {
           Back
         </span>
       </Link>
-      <div className="flex flex-col ml-1 mt-8 relative md:flex-row">
-        <h1 className="absolute top-2 text-3xl mt-1 py-1 px-2 rounded bg-neutral-100/45 dark:bg-neutral-400/45">
-          {project.name}
-        </h1>
+      <div className="flex flex-col ml-1 mt-8 md:flex-row">
         <div className="md:w-1/2">
           <Image
             className="rounded-lg"
             src={image_path}
             alt={project.name}
-            layout="responsive"
-            height={150}
-            width={300}
+            height={450}
+            width={600}
+            style={{ aspectRatio: "450 / 450" }}
           />
           <div className="flex justify-center mt-4">
             <a
@@ -67,11 +64,14 @@ const ProjectDetail = ({ project }: { project: Project }) => {
           </div>
         </div>
         <div className="md:w-1/2 md:ml-4">
-          <h2 className="text-2xl">Project Description:</h2>
-          <p className="mt-1">{project.description}</p>
-          <div className="mt-4 max-w-64">
-            <h2 className="text-2xl">Technologies Used:</h2>
-            <ul className="flex flex-wrap gap-2 max-w-80 mt-1">
+          <h2 className=" text-3xl  py-1 px-2 rounded bg-neutral-100/45 dark:bg-neutral-400/45">
+            {project.name}
+          </h2>
+          <p className="text-2xl mt-4">description:</p>
+          <p className="mt-1 pl-4">{project.description}</p>
+          <div className="mt-4 max-w-md">
+            <h2 className="text-2xl mb-2">technologies used:</h2>
+            <ul className="flex flex-wrap pl-4 gap-2 mt-1">
               {project.key_techs.map((tech) => (
                 <li
                   className="flex items-center py-1 px-2 bg-neutral-300 dark:bg-neutral-600"
