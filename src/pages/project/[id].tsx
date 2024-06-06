@@ -1,9 +1,23 @@
 import { Project } from "../../../types";
 import { AiFillGithub, AiFillProject, AiFillCaretLeft } from "react-icons/ai";
-import { getStaticPaths, getStaticProps } from "./projectDetailUtils";
 
 import Image from "next/image";
 import Link from "next/link";
+
+import { GetStaticPaths, GetStaticProps } from "next";
+import { projects } from "../../data/data";
+
+const getStaticPaths: GetStaticPaths = async () => {
+  const paths = projects.map((project) => ({
+    params: { id: project.name },
+  }));
+  return { paths, fallback: false };
+};
+
+const getStaticProps: GetStaticProps = async ({ params }) => {
+  const project = projects.find((p) => p.name === params?.id);
+  return { props: { project } };
+};
 
 const ProjectDetail = ({ project }: { project: Project }) => {
   if (!project) return <div>Project not found</div>;
@@ -69,5 +83,4 @@ const ProjectDetail = ({ project }: { project: Project }) => {
   );
 };
 
-export { getStaticPaths, getStaticProps };
 export default ProjectDetail;
