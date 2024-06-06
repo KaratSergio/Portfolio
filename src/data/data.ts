@@ -49,4 +49,21 @@ export const projects: Project[] = [
       "bcryptjs ",
     ],
   },
+  {
+    name: "CamperRent",
+    image_path: "/images/campers.png",
+    deployed_url: "https://karatsergio.github.io/CamperRent_UA/",
+    github_url: "https://github.com/KaratSergio/CamperRent_UA",
+    category: ["React"],
+    description:
+      "This repository contains a web application for a company that provides campervan services in Ukraine rent. Home page with a general description of the services provided by the company. A page containing a catalog of campers of various configurations, which the user can filter by location, equipment and type. A page with ads that have been added to favorites by the user.",
+    key_techs: [
+      "React ",
+      "Redux",
+      "styled-components",
+      "redux-toolkit",
+      "axios",
+      "react-hook-form",
+    ],
+  },
 ];

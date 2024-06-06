@@ -10,7 +10,7 @@ const ProjectDetail = ({ project }: { project: Project }) => {
 
   return (
     <div
-      className="container bg-slate-200 dark:bg-zinc-950 mx-auto px-4 relative"
+      className="container bg-slate-200 dark:bg-zinc-950 mx-auto px-4 pb-4 relative overflow-x-auto scrollbar-thin"
       style={{ height: "65vh" }}
     >
       <Link href="/projects">

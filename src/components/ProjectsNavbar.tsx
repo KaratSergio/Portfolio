@@ -6,7 +6,7 @@ const ProjectsNavbar = ({
   active,
 }: ProjectsNavbarProps) => {
   return (
-    <div className="flex px-3 py-2 space-x-3 overflow-x-auto list-none">
+    <ul className="flex px-3 py-2 space-x-3 overflow-x-auto list-none scrollbar-thin">
       <NavItem
         value="All"
         handlerFilterCategory={handlerFilterCategory}
@@ -37,7 +37,7 @@ const ProjectsNavbar = ({
         handlerFilterCategory={handlerFilterCategory}
         active={active}
       />
-    </div>
+    </ul>
   );
 };
 

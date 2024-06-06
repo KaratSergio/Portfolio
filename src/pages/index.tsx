@@ -6,13 +6,11 @@ const About: NextPage = () => {
   const [theme, setTheme] = useState<string>("light");
 
   useEffect(() => {
-    // Функция для определения текущей темы
     const currentTheme = document.documentElement.classList.contains("dark")
       ? "dark"
       : "light";
     setTheme(currentTheme);
 
-    // Функция для отслеживания изменений темы
     const observer = new MutationObserver(() => {
       const newTheme = document.documentElement.classList.contains("dark")
         ? "dark"
@@ -45,10 +43,10 @@ const About: NextPage = () => {
         solutions.
       </h6>
       <div
-        className="flex-grow p-4 mt-5 bg-gray-400 dark:bg-dark-100 relative"
+        className="flex-grow p-4 mt-5 bg-gray-400 dark:bg-dark-100 relative overflow-x-auto scrollbar-thin"
         style={{ marginLeft: "-1.5rem", marginRight: "-1.5rem" }}
       >
-        <ul className="grid grid-cols-2 gap-4 my-3 text-xl font-semibold tracking-wide">
+        <ul className="grid grid-cols-2 gap-4 my-3 text-xl font-semibold tracking-wide ">
           <li>
             <strong>I CAN</strong>
             <br />
@@ -79,14 +77,14 @@ const About: NextPage = () => {
           {theme === "dark" ? (
             <Image
               src="/images/react.svg"
-              alt="React SVG"
+              alt="React logotype"
               width={100}
               height={100}
             />
           ) : (
             <Image
               src="/images/node.svg"
-              alt="Node SVG"
+              alt="Node logotype"
               width={100}
               height={100}
             />
