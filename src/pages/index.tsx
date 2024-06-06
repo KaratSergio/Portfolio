@@ -61,7 +61,7 @@ const About: NextPage = () => {
             enhance the quality of my developments.
           </li>
           <li>
-            <strong>I'M LOOKING FOR</strong>
+            <strong>I&apos;M LOOKING FOR</strong>
             <br />
             Moreover, I am open to new opportunities and actively seeking my
             team. I am ready to participate in interesting and promising
