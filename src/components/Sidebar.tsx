@@ -43,7 +43,7 @@ const Sidebar = () => {
         Web Developer
       </p>
       <a
-        href="/assets/cv.jpg"
+        href="./assets/cv.jpg"
         download="Serhii Safonov Resume.pdf"
         className="flex items-center justify-center px-2 py-1 my-2 bg-gray-200 rounded-full cursor-pointer dark:bg-dark-200 dark:bg-black-500"
       >
