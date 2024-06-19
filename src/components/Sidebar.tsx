@@ -12,7 +12,7 @@ const Sidebar = () => {
   const { theme, setTheme } = useTheme();
   const [mounted, setMounted] = useState(false);
 
-  const resumePDF = "/assets/Serhii_Safonov_CV.pdf";
+  const resumePDF = "./assets/Serhii_Safonov_CV.pdf";
   const isLocal = process.env.NODE_ENV === "development";
   const imageBasePath = isLocal ? "/images/" : "./images/";
 

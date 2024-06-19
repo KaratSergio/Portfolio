@@ -2,7 +2,7 @@ import { useState } from "react";
 
 const Resume = () => {
   const [showResume, setShowResume] = useState(false);
-  const resumePDF = "/assets/Serhii_Safonov_CV.pdf";
+  const resumePDF = "./assets/Serhii_Safonov_CV.pdf";
 
   const toggleResume = () => {
     setShowResume(!showResume);
