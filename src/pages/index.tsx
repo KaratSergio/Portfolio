@@ -82,19 +82,6 @@ const About: NextPage = () => {
             Tailwind CSS PostgreSQL MongoDB MariaDB
           </li>
         </ul>
-        {/* <div className="absolute bottom-4 right-4">
-          {theme === "dark" ? (
-            <div
-              className="w-36 h-32 bg-cover bg-no-repeat bg-center"
-              style={{ backgroundImage: `url(./images/react.svg)` }}
-            />
-          ) : (
-            <div
-              className="absolute bottom-0 right-0 w-44 h-28 bg-cover bg-no-repeat bg-center"
-              style={{ backgroundImage: `url(./images/node.svg)` }}
-            />
-          )}
-        </div> */}
       </div>
     </div>
   );

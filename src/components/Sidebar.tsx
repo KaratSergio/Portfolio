@@ -12,6 +12,10 @@ const Sidebar = () => {
   const { theme, setTheme } = useTheme();
   const [mounted, setMounted] = useState(false);
 
+  const resumePDF = "/assets/Serhii_Safonov_CV.pdf";
+  const isLocal = process.env.NODE_ENV === "development";
+  const imageBasePath = isLocal ? "/images/" : "./images/";
+
   useEffect(() => {
     setMounted(true);
   }, []);
@@ -25,7 +29,7 @@ const Sidebar = () => {
   return (
     <>
       <Image
-        src="/images/avatar.jpg"
+        src={`${imageBasePath}avatar.jpg`}
         alt="avatar"
         className={`mx-auto border rounded-full ${
           theme === "light" ? "border-black " : "border-white shadow-xl"
@@ -42,15 +46,15 @@ const Sidebar = () => {
         Web Developer
       </p>
       <a
-        href="/public/images/avatar.jpg"
-        download="Serhii Safonov Resume.pdf"
+        href={resumePDF}
+        download="Serhii_Safonov_CV.pdf"
         className="flex items-center justify-center px-2 py-1 my-2 bg-gray-200 rounded-full cursor-pointer dark:bg-dark-200 dark:bg-black-500"
       >
         <BiSolidUser className="w-5 h-5 mr-2" />
         <span>Download CV</span>
       </a>
 
-      <div className="flex justify-around w-9/12 mx-auto my-5 text-green md:w-full">
+      <div className="flex justify-center w-9/12 mx-auto my-5 text-green md:w-full">
         <a
           className="flex align-center"
           href="https://www.linkedin.com/in/sergey-safonov9/"
@@ -58,7 +62,7 @@ const Sidebar = () => {
           <AiFillLinkedin className="w-8 h-8 cursor-pointer hover:text-dark" />
         </a>
         <button
-          className="w-8/8 px-4  text-white rounded-full cursor-pointer bg-gradient-to-l hover:text-dark focus:outline-none"
+          className="invisible w-8/8 px-4  text-white rounded-full cursor-pointer bg-gradient-to-l hover:text-dark focus:outline-none"
           onClick={() => window.open("mailto:safonov.json@gmail.com")}
         >
           Email me

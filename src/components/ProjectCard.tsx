@@ -2,11 +2,7 @@ import { useRouter } from "next/router";
 import { Project } from "../../types";
 import Image from "next/image";
 
-type ProjectCardProps = {
-  project: Project;
-};
-
-const ProjectCard = ({ project }: ProjectCardProps) => {
+const ProjectCard = ({ project }: { project: Project }) => {
   const router = useRouter();
 
   const handleClick = () => {
@@ -19,7 +15,7 @@ const ProjectCard = ({ project }: ProjectCardProps) => {
         src={project.image_path}
         alt={project.name}
         height={50}
-        width={300}
+        width={350}
       />
       <p className="my-2 text-center">{project.name}</p>
     </div>

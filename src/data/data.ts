@@ -11,7 +11,8 @@ export const projects: Project[] = [
     deployed_url: "https://karatsergio.github.io/project-caramel/",
     github_url: "https://github.com/KaratSergio/project-caramel",
     category: ["JavaScript", "TeamProject"],
-    description: "The project is a website for purchasing food.",
+    description:
+      "The project is a website for purchasing food products. This application is built on Vanilla JavaScript and uses modern development tools to provide a fast and interactive experience. Implemented filtering, pagination, product card, order basket..",
     key_techs: ["Java Script", "HTML", "CSS", "API"],
   },
   {
@@ -21,7 +22,7 @@ export const projects: Project[] = [
     github_url: "https://github.com/KaratSergio/project-art-of-cinema",
     category: ["React"],
     description:
-      "The project involves working with the TMDb API to obtain information about films.",
+      "The project involves working with the TMDb API to retrieve information about movies. It is a React-based front-end application that allows users to search for movies, view movie information, and interact with various functions provided by the TMDb API",
     key_techs: ["React", "Redux", "YouTube API", "TMDb API"],
   },
   {
@@ -30,8 +31,16 @@ export const projects: Project[] = [
     deployed_url: "https://todoshka-back-5xf7.onrender.com/",
     github_url: "https://github.com/KaratSergio/ToDoshka_back",
     category: ["Node", "TeamProject"],
-    description: "The project is a backend for an application like Trello...",
-    key_techs: ["Node", "Express", "Mongo", "REST API"],
+    description:
+      "ToDoshka_back is a backend for an application similar to Trello. It's designed to manage tasks, projects, and boards, providing functionality similar to the popular collaboration tool Trello. The application includes user authorization, storing data in a database, uploading and storing files, and interacting with external APIs.",
+    key_techs: [
+      "Node",
+      "Express",
+      "Mongo",
+      "Claudinary",
+      "Swagger",
+      "REST API",
+    ],
   },
   {
     name: "AuthMaster_back",
