@@ -23,9 +23,9 @@ const ProjectDetail = ({ project }: { project: Project }) => {
   if (!project) return <div>Project not found</div>;
 
   const isLocal = process.env.NODE_ENV === "development";
-  // const image_path = isLocal
-  //   ? `/images/${project.name}.png`
-  //   : `../images/${project.name}.png`;
+  const image_path = isLocal
+    ? `/images/${project.name}.png`
+    : `../images/${project.name}.png`;
 
   return (
     <div
@@ -42,7 +42,7 @@ const ProjectDetail = ({ project }: { project: Project }) => {
         <div className="md:w-1/2">
           <Image
             className="rounded-lg"
-            src={project.image_path}
+            src={image_path}
             alt={project.name}
             height={450}
             width={600}
