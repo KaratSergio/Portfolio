@@ -17,7 +17,7 @@ export const projects: Project[] = [
   },
   {
     name: "Filmistry",
-    image_path: `${imageBasePath}filmistry.png`,
+    image_path: `${imageBasePath}Filmistry.png`,
     deployed_url: "https://karatsergio.github.io/project-art-of-cinema/",
     github_url: "https://github.com/KaratSergio/project-art-of-cinema",
     category: ["React"],
@@ -27,7 +27,7 @@ export const projects: Project[] = [
   },
   {
     name: "ToDoshka_back",
-    image_path: `${imageBasePath}ToDoshka_Back.png`,
+    image_path: `${imageBasePath}ToDoshka_back.png`,
     deployed_url: "https://todoshka-back-5xf7.onrender.com/",
     github_url: "https://github.com/KaratSergio/ToDoshka_back",
     category: ["Node", "TeamProject"],
