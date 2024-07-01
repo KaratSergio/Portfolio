@@ -79,4 +79,21 @@ export const projects: Project[] = [
       "react-hook-form",
     ],
   },
+  {
+    name: "Phonebook",
+    image_path: `${imageBasePath}Phonebook.png`,
+    deployed_url: "https://karatsergio.github.io/PhoneBook/",
+    github_url: "https://github.com/KaratSergio/PhoneBook",
+    category: ["React"],
+    description:
+      "This project is a web application for managing contacts, including functions for registering and authorizing users, adding and deleting contacts, and filtering contacts. The app allows users to register, log in and manage their contacts securely. Users can add new contacts, remove unnecessary ones, and filter contacts based on specific criteria such as name or email.",
+    key_techs: [
+      "React ",
+      "Redux Toolkit",
+      "React-i18next",
+      "Notiflix",
+      "axios",
+      "ReduxThunk",
+    ],
+  },
 ];

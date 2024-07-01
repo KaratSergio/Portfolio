@@ -21,14 +21,14 @@ const Resume = () => {
         <div className="flex ml-24 justify-center">
           <button
             onClick={toggleResume}
-            className="px-4 py-2 mt-4 bg-gray-200 rounded-lg hover:bg-gray-300 focus:outline-none"
+            className=" border-gray-300 bg-gradient-to-b from-zinc-200 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30"
           >
             {showResume ? "Hide resume" : "Show resume"}
           </button>
           <a
             href={resumePDF}
             download="Serhii_Safonov_CV.pdf"
-            className="ml-4 mt-4 px-4 py-2 bg-gray-200 rounded-lg hover:bg-gray-300 focus:outline-none"
+            className="ml-4 border-gray-300 bg-gradient-to-b from-zinc-200 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30"
           >
             Download resume
           </a>
