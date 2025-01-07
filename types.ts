@@ -3,7 +3,9 @@ export type Category =
   | "Node"
   | "JavaScript"
   | "Nest"
+  | "Next"
   | "TeamProject"
+  | "ReactNative"
   | "All";
 
 export interface Project {

@@ -105,7 +105,7 @@ export const projects: Project[] = [
     description:
       "The project is a website that provides online language lessons. It was created using React, Redux, React Router Dom and Firebase for authentication and data storage. Styling is implemented using Tailwind CSS. Forms are managed and validated using React Hook Form and Yup. The Redux Toolkit provides state management. Additional libraries are used for support functions and build tools.",
     key_techs: [
-      "React ",
+      "React",
       "Redux Toolkit",
       "Firebase",
       "Notiflix",
@@ -113,5 +113,24 @@ export const projects: Project[] = [
       "TypeScript",
       "Tailwind-CSS",
     ],
+  },
+  {
+    name: "eCalculator",
+    image_path: `${imageBasePath}eCalculator.png`,
+    deployed_url: "https://www.e-calc.tech/",
+    github_url: "https://github.com/smerch88/eCalc",
+    category: ["Next", "TeamProject"],
+    description:
+      "A website for an energy calculator that helps consumers change their energy costs by providing recommendations for the optimal use of tariffs.",
+    key_techs: ["Next", "Zustand", "TypeScript", "Tailwind-CSS"],
+  },
+  {
+    name: "PicViewer",
+    image_path: `${imageBasePath}PicViewer.png`,
+    deployed_url: "https://github.com/KaratSergio/NativePicViewer",
+    github_url: "https://github.com/KaratSergio/NativePicViewer",
+    category: ["ReactNative"],
+    description: "Image viewer app :)",
+    key_techs: ["ReactNative", "Redux", "TypeScript", "Tailwind-CSS"],
   },
 ];

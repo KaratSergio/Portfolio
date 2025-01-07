@@ -28,7 +28,17 @@ const ProjectsNavbar = ({
         active={active}
       />
       <NavItem
+        value="Next"
+        handlerFilterCategory={handlerFilterCategory}
+        active={active}
+      />
+      <NavItem
         value="Nest"
+        handlerFilterCategory={handlerFilterCategory}
+        active={active}
+      />
+      <NavItem
+        value="ReactNative"
         handlerFilterCategory={handlerFilterCategory}
         active={active}
       />
