@@ -125,6 +125,16 @@ export const projects: Project[] = [
     key_techs: ["Next", "Zustand", "TypeScript", "Tailwind-CSS"],
   },
   {
+    name: "MasterTattoo",
+    image_path: `${imageBasePath}MasterTattoo.png`,
+    deployed_url: "https://master-tattoo.vercel.app/uk",
+    github_url: "https://github.com/KaratSergio/master-tattoo",
+    category: ["Next"],
+    description:
+      "A website for an energy calculator that helps consumers change their energy costs by providing recommendations for the optimal use of tariffs.",
+    key_techs: ["Next", "Apollo GraphQL", "TypeScript", "Tailwind-CSS", "Vite"],
+  },
+  {
     name: "PicViewer",
     image_path: `${imageBasePath}PicViewer.png`,
     deployed_url: "https://github.com/KaratSergio/NativePicViewer",
