@@ -40,12 +40,12 @@ const Navbar = () => {
 
       <div className="text-base font-normal md:text-xl">
         <NavItem active={active} setActive={setActive} name="About" route="/" />
-        <NavItem
+        {/* <NavItem
           active={active}
           setActive={setActive}
           name="Resume"
           route="/resume"
-        />
+        /> */}
         <NavItem
           active={active}
           setActive={setActive}
