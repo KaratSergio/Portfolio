@@ -31,9 +31,8 @@ const Sidebar = () => {
       <Image
         src={`${imageBasePath}avatar.jpg`}
         alt="avatar"
-        className={`mx-auto border rounded-full ${
-          theme === "light" ? "border-black " : "border-white shadow-xl"
-        }`}
+        className={`mx-auto border rounded-full ${theme === "light" ? "border-black " : "border-white shadow-xl"
+          }`}
         height={128}
         width={128}
         quality={100}
@@ -45,14 +44,14 @@ const Sidebar = () => {
       <p className="px-2 py-1 my-3 bg-gray-200 rounded-full dark:bg-dark-200 dark:bg-black-500">
         Web Developer
       </p>
-      <a
+      {/* <a
         href={resumePDF}
         download="Serhii_Safonov_CV.pdf"
         className="flex items-center justify-center px-2 py-1 my-2 bg-gray-200 rounded-full cursor-pointer dark:bg-dark-200 dark:bg-black-500"
       >
         <BiSolidUser className="w-5 h-5 mr-2" />
         <span>Download CV</span>
-      </a>
+      </a> */}
 
       <div className="flex justify-center w-9/12 mx-auto my-5 text-green md:w-full">
         <a
